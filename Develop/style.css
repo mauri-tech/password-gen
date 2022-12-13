@@ -1,11 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
 }
 
 html,
 body,
+
+
+
 .wrapper {
   height: 100%;
   margin: 0;
@@ -14,11 +21,13 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #FA8BFF;
+  background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+  
 }
 
 .wrapper {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -39,7 +48,7 @@ header {
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
-  padding: 30px 40px;
+  padding: 100px 100px;
 }
 
 .card-header::after {
@@ -74,7 +83,7 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgb(173, 11, 202);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -108,7 +117,7 @@ button[disabled] {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 85px;
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -126,9 +135,17 @@ button[disabled] {
   }
 
   #password {
-    font-size: 1rem;
+    font-size: 4rem;
   }
 }
+
+input[type="number"] {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(249, 230, 255);
+}
+
+
 
 @media (max-width: 500px) {
   .btn {
